@@ -1,0 +1,40 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+organizador_essentials:
+  name: Organizador essentials
+  description: "Este bolso organizador adidas te permite moverte con total libertad mientras te enfrentás a cada actividad. El compartimiento principal tiene cierre para mantener tus llaves, tarjetas y teléfono seguros. El bolsillo frontal con cierre ofrece un lugar seguro para tus objetos pequeños. Ajustá la correa para el hombro a tu medida y prepárate para tu día.
+  
+  Hecho con una serie de materiales reciclados y al menos un 40 % de contenido reciclado, este producto representa solo una de nuestras soluciones para ayudar a ponerle fin a la contaminación por plástico."
+  price: 16899
+  stock: 40
+  category: accessories
+  image_link: https://res.cloudinary.com/dl6igxwvo/image/upload/v1699910033/trabajoFinalRails/Organizador_Essentials_Negro_HT4738_01_standard_hok9sz.jpg
+
+
+zapatillas_courtjam:
+  name: Zapatillas courtjam control para tenis
+  description: "Mantené a tu oponente exactamente donde querés con estas zapatillas adidas creadas para darte el control en canchas de arcilla. Estas zapatillas CourtJam Control tienen un exterior de malla transpirable y una cómoda mediasuela Bounce para asegurar que tu mente esté enfocada en tu juego. La tecnología Torsion System en el mediopié te ayuda a deslizarte con facilidad y realizar otros movimientos laterales en la cancha. La puntera Adituff resistente al desgaste cuenta con un diseño adaptado al juego masculino que te permite darlo todo en cada partido sin preocuparte por tu calzado.
+
+  El exterior contiene al menos un 50 % de materiales reciclados. Este producto representa solo una de nuestras soluciones para ayudar a poner fin a los residuos plásticos."
+  price: 74999
+  stock: 25
+  category: footwear
+  image_link: https://res.cloudinary.com/dl6igxwvo/image/upload/v1699909592/trabajoFinalRails/Zapatillas_CourtJam_Control_para_Tenis_Negro_ID1539_got89o.avif
+
+botines_predator:
+  name: Botines predator accuracy.3 terreno firme 
+  description: "Control + precisión = confianza. Cuando el arco está en tus ojos, apuntá a la perfección con adidas Predator Accuracy. El suave exterior textil revestido de estos botines incorpora textura de alta definición en la zona de impacto. Una mezcla de elementos y el estampado en relieve te ayudan a lograr cada pase y cada tiro. Su suela especializada te permite dominar en la cancha de terreno firme."
+  price: 83999
+  stock: 18
+  category: sport
+  image_link: https://res.cloudinary.com/dl6igxwvo/image/upload/v1699988047/trabajoFinalRails/Botines_Predator_Accuracy.3_Terreno_Firme_Negro_GW4593_22_model_bjmwta.jpg
+
+remeras_aeroready:
+  name: remeras aeroready designed 2 move feelready
+  description: "Esta remera de entrenamiento se ve bien en el gimnasio y en los momentos de descanso con amigos en casa. Incorpora tecnología AEROREADY que se encarga de sudor para que tengas una cosa menos por la cual preocuparte. Su diseño FreeLift se encarga de mantenerla en su lugar durante los movimientos por encima de la cabeza. Luce el icónico logo adidas Badge of Sport en el frente para una energía deportiva e informal que combina con tu estilo de vida.
+  
+  Este producto está hecho con Primegreen, una serie de materiales reciclados de alto desempeño."
+  price: 24999
+  category: clothes
+  image_link: https://res.cloudinary.com/dl6igxwvo/image/upload/v1699996634/trabajoFinalRails/Remera_AEROREADY_Designed_2_Move_Feelready_Negro_GT3109_01_laydown_qnvlsh.jpg

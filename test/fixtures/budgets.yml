@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+presupuesto1:
+  expiration_date: 2023-11-13 14:15:44
+  total: 9.99
+  name: presupuesto 1
+  user: staff
+  # product: organizador_essentials
+
+presupuesto2:
+  expiration_date: 2023-11-13 14:15:44
+  total: 9.99
+  name: presupuesto 2
+  user: staff
+  # product: organizador_essentials
+

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+budget_item1:
+  amount: 10
+  product: organizador_essentials
+  budget: presupuesto1
+  
+  # product: organizador_essentials
+
+budget_item2:
+  amount: 10
+  product: organizador_essentials
+  budget: presupuesto1
