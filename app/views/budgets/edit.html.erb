@@ -1,0 +1,37 @@
+<h1>Modificar Presupuesto</h1>
+
+<%= form_for @budget, url: budget_path(@budget), method: :patch do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :expiration_date %>
+    <%= f.date_field :expiration_date %>
+  </div>
+
+  <!-- Lista de productos asociados al presupuesto -->
+  <h2>Productos en el Presupuesto</h2>
+  <ul>
+    <% @budget.budget_items.each do |budget_item| %>
+      <li>
+        <%= "#{budget_item.product.name} - Cantidad: #{budget_item.amount}" %>
+        <%= f.fields_for :budget_items, budget_item do |budget_item_fields| %>
+          <div class="product-fields">
+            <%= budget_item_fields.hidden_field :id %>
+            <%= budget_item_fields.label :amount, 'Cantidad:' %>
+            <%= budget_item_fields.number_field :amount, min: 1 %>
+          </div>
+        <% end %>
+
+        <!-- Enlace para eliminar producto -->
+        <%= link_to 'Eliminar Producto', budget_item_path(budget_item), method: :delete, data: { confirm: '¿Eliminar producto del presupuesto?' }, class: 'btn btn-danger' %>
+      </li>
+    <% end %>
+  </ul>
+
+  <div>
+    <%= f.submit 'Guardar cambios' %>
+  </div>
+<% end %>

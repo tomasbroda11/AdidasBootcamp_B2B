@@ -1,0 +1,15 @@
+
+
+<div class="header">
+    <h2><%= link_to 'Adidas', products_path%></h2>
+    
+    <% if user_signed_in? && current_page?(products_path)%>
+    <p>Bienvenido, <%= current_user.email %>!</p>
+    <%= link_to 'Cerrar Sesión', destroy_user_session_path, method: :delete %>
+    <%= link_to 'Mi Perfil', user_profile_path, class: "login-button" %>
+    <% else %>
+        <% unless current_page?(new_user_session_path) || current_page?(new_user_registration_path) || user_signed_in? %>
+            <%= link_to "Iniciar sesión", new_user_session_path, class: "login-button" %>
+        <% end %>
+    <% end %>
+</div>

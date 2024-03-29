@@ -1,0 +1,21 @@
+<h1>Lista de Productos</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= image_tag product.image_link %></li>
+    <li> <%= "#{product.name}" %></li>
+    <li><%= "#{product.description}" %></li>
+    <li><%= "precio: $#{product.price}" %></li>
+    <li><%= "stock: #{product.stock}" %></li>
+    <% if user_signed_in? %>
+      <%= form_with(model: product, url: add_to_budget_product_path(product), method: :post, local: true) do |form| %>
+        <%= hidden_field_tag 'product_id', product.id %>
+        <%= form.select :budget_id, options_for_select(current_user.budget.map { |b| [b.name, b.id] }), prompt: "Seleccionar presupuesto", class: "budget-select" %>
+        <%= submit_tag "Agregar al presupuesto", class: "btn btn-primary" %>
+      <% end %>
+    <% end %>
+    
+  <% end %>
+</ul>
+
+
