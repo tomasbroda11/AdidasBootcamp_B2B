@@ -1,0 +1,64 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+es:
+  devise:
+    sessions:
+      new:
+        title: "Inicio de Sesión"
+        email_label: "Correo Electrónico"
+        password_label: "Contraseña"
+        remember_me: "Recuérdame"
+        submit_button: "Iniciar Sesión"
+      links:
+        sign_up: "Registrarse"
+    passwords:
+      new:
+        title: "¿Olvidaste tu contraseña?"
+        email_label: "Correo Electrónico"
+        submit_button: "Enviar instrucciones para restablecer la contraseña"
+      shared:
+        error_messages:
+    shared:
+      links:
+        log_in: "Iniciar sesión"
+        sign_up: "Registrarse"
+        sign_in_with: "Iniciar sesión con %{provider}"
+    registrations:
+      new:
+        title: 'Registro'
+        name_label: 'Nombre'
+        last_name_label: 'Apellido'
+        address_label: 'Dirección'
+        email_label: 'Correo electrónico'
+        password_label: 'Contraseña'
+        characters_minimum: 'caracteres mínimo'
+        password_confirmation_label: 'Confirmar contraseña'
+        submit_button: 'Registrarse'
+    
